@@ -1,7 +1,9 @@
 <?php
 	include ('header.php');
 
-	$email = isset($_POST['username']) ? $_POST['username'] : '';
+	$email = isset($_POST['email']) ? $_POST['email'] : '';
+
+	
 ?>
 	<div class="row">
       <div class="large-12 columns">
@@ -12,7 +14,7 @@
 	        <form method="POST" action="forgotusername.php">
 
 	        	<div class="row">
-	        		<input type="text" name="email" placeholder="E-mail" />
+	        		<input type="text" name="email" id="email" placeholder="E-mail" />
 	        	</div>
 
 	        	<div class="row">
