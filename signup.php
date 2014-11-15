@@ -20,7 +20,7 @@
 
 				<br />
 
-				<label>Uer type</label>
+				<label>User type</label>
 				<select>
 					<option value="1" selected="selected">Faculty Member</option>
 					<option value="2">Student</option>
@@ -46,12 +46,21 @@
 				<br />
 
 				<label>Re-type your Email</label>
-				<input type="text" id="form_retype_email" />
+				<input type="text" id="form_email_retype" />
 
 				<br />
 
 				<label>Password</label>
 				<input type="password" id="form_password">
+
+				<br />
+
+				<label>Re-type Password</label>
+				<input type="password" id="form_password_retype" />
+
+				<br />
+
+				
 			</form>
 		</div>
 	</body>
