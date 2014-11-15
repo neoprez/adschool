@@ -1,67 +1,54 @@
-<html>
-	<head>
-		<title>Sign Up</title>
-	</head>
-	<body>
-		<!--Sign up using FB account-->
-		<div id="facebook_signup">
-			
-		</div>
-		<div id="signup_div">
-			<form id="signup_form" action="signup.php">
+<?php include('header.php'); ?>
+			<h2> Sign Up</h2>
+<form>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>
+        <input type="text" placeholder="Name" />
+      </label>
+      
+     <p></p>
+      
+      <label>
+        <input type="text" placeholder="Last Name" />
+      </label>
+      
+         <p></p>
+         
+      <label>
+        <input type="text" placeholder="School Email" />
+      </label>
+      
+         <p></p>
+      
+      <label>
+        <input type="text" placeholder="Confirm School email" />
+      </label>
+      
+         <p></p>
+         
+      <label>
+        <input type="text" placeholder="Password" />
+      </label>
+      
+         <p></p>
+         
+         <label>
+        <input type="text" placeholder="Re-enter Password" />
+      </label>
+      
+     <p></p>
+      <div class="large-4 medium-4 columns">
+       <a href="#" class="button [tiny small large]">Sign Up</a>
+       </div>
+      </div>
+    
+    
+  </div>
 				
-				<label>First Name</label>
-				<input type="text" id="form_firstname" />
+<?php include('footer.php'); ?>
 
-				<br />
 
-				<label>Last Name</label>
-				<input type="text" id="form_lastname" />
-
-				<br />
-
-				<label>User type</label>
-				<select>
-					<option value="1" selected="selected">Faculty Member</option>
-					<option value="2">Student</option>
-					<option value="3">Organization Member</option>
-				</select>
-
-				<br />
-
-				<label>School</label>
-				<select id="form_school">
-					<option value="" selected="selected">None</option>
-					<option value="1">Lehman College</option>
-					<option value="2">City College of New York</option>
-					<option value="3">Columbia University</option>
-					<option value="0">Other</option>
-				</select>
-
-				<br />
-
-				<label>Email</label>
-				<input type="text" id="form_email" />
-
-				<br />
-
-				<label>Re-type your Email</label>
-				<input type="text" id="form_email_retype" />
-
-				<br />
-
-				<label>Password</label>
-				<input type="password" id="form_password">
-
-				<br />
-
-				<label>Re-type Password</label>
-				<input type="password" id="form_password_retype" />
-
-				<br />
-
-				
-			</form>
-		</div>
-	</body>
-</html>
+  
+  
+  
