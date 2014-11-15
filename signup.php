@@ -1,37 +1,37 @@
 <?php include('header.php'); ?>
 			<h2> Sign Up</h2>
 <form>
-  <div class="row">
+  <div class="row center">
     <div class="large-12 columns">
       <label>
         <input type="text" placeholder="Name" />
       </label>
       
-     <p></p>
+   
       
       <label>
         <input type="text" placeholder="Last Name" />
       </label>
       
-         <p></p>
+        
          
       <label>
         <input type="text" placeholder="School Email" />
       </label>
       
-         <p></p>
+        
       
       <label>
         <input type="text" placeholder="Confirm School email" />
       </label>
       
-         <p></p>
+       
          
       <label>
         <input type="text" placeholder="Password" />
       </label>
       
-         <p></p>
+         
          
          <label>
         <input type="text" placeholder="Re-enter Password" />
