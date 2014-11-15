@@ -2,29 +2,36 @@
 	include ('header.php');
 	include_once ('connect.php');
 
-	$test = "098f6bcd4621d373cade4e832627b4f6";
+	// $test = "098f6bcd4621d373cade4e832627b4f6";
 
-	$username = isset($_POST['username']) ? $_POST['username'] : '';
-	$password = isset($_POST['password']) ? md5($_POST['password']) : '';
+	// $username = isset($_POST['username']) ? $_POST['username'] : '';
+	// $password = isset($_POST['password']) ? md5($_POST['password']) : '';
 
-	if($username != '' || $password != '') {
-		$stmt =  $mysqli->stmt_init();
+	// $stmt = mysqli_stmt_init($mysqli);
 
-		if ($stmt->prepare("SELECT * FROM user WHERE username='". $username ."'"." AND password='". $password ."'")) {
-			echo "work";
-		}
-	}
+	// echo $username;
+	// echo $password;
+
+	// if($username != '' || $password != '') {
+
+	// 	if (mysqli_stmt_prepare($stmt, "SELECT * FROM user WHERE username='". $username ."'"." AND password='". $password ."'")) {
+	// 		mysqli_stmt_execute($stmt);
+ //    		mysqli_stmt_bind_result($stmt, $result);
+ //    		mysqli_stmt_fetch($stmt);
+
+ //    		echo $result;
+	// 	} else {
+
+	// 	}
+	// }
 
 ?>
 		<!--Sign up using FB account-->
-		<div id="facebook_signup">
-			
-		</div>
 		<div class="row center">
 			<div class="large-12 columns">
 				<div class="panel">
 					<div id="signup_div">
-						<form id="signup_form" action="login.php" method="POST">
+						<form id="signup_form" action="timeline.php" method="POST">
 							<!-- <label>First Name</label> -->
 							
 							<div class="large-12 columns">
