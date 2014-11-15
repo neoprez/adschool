@@ -25,7 +25,7 @@
 		<div class="large-12 columns">
 			<div class="panel">
 				<div id="signup_div">
-					<form id="signup_form" action="login.php" method="POST">
+					<form id="signup_form" action="timeline.php" method="POST">
 						<!-- <label>First Name</label> -->
 						
 						<div class="large-12 columns">
