@@ -1,5 +1,6 @@
 @import url('css/foundation.min.css');
 @import url('css/normalize.css');
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
 
 #pageWrapper {
      margin: 0px auto; 
@@ -11,6 +12,7 @@
 
 .center {
 margin: 0 auto;
+<<<<<<< HEAD
 max-width:70%;
 }
 
@@ -36,3 +38,59 @@ input[type=text]:focus, textarea:focus {
   margin: 5px 1px 3px 0px;
   border: 1px solid rgba(81, 203, 238, 1);
 }
+=======
+max-width: 70%;
+}
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	
+}
+
+#slogan {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#filter {
+	background-color: #e9e5e5;
+}
+
+.sub-nav {
+	padding: 10px 10px 10px 0;
+	display: block;
+	width: auto;
+	overflow: hidden;
+	margin-bottom: 0;
+}
+
+.sub-nav dt, .sub-nav dd, .sub-nav li {
+	float: left;
+	display: inline;
+	margin-left: 0.88889rem;
+	margin-bottom: 0;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+	font-weight: normal;
+	font-size: 0.77778rem;
+	color: #999999;
+}
+
+#tags {
+	background-color: #d8d3d3;
+}
+
+.event-info, .event-image {
+	display: inline-block;
+}
+
+.icon {
+	width: 32px;
+	height: 32px;
+	margin: 5px;
+}
+
+.social {
+	padding-top: 3%;
+}
+>>>>>>> 59a0d346901a73a69a2513f9fbc936f4eed08e11
