@@ -166,7 +166,7 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `COLLEGE_KONNET`;
-INSERT INTO `COLLEGE_KONNET`.`USER` (`IDT_USER`, `FNM_USER`, `LNM_USER`, `PMS_USER`, `PSW_USER`, `EML_USER`, `CPN_USER`, `SND_EML_USER`, `IMG_USER`, `SCHOOL_IDT_SCHOOL`) VALUES (1, 'TEST', 'TEST', 1, '098f6bcd4621d373cade4e832627b4f6', 'test@test.com', '9548168660', 'test2@test.com', 'test.jpg', 1);
+INSERT INTO `COLLEGE_KONNET`.`USER` (`IDT_USER`, `FNM_USER`, `LNM_USER`, `PMS_USER`, `PSW_USER`, `EML_USER`, `CPN_USER`, `SND_EML_USER`, `IMG_USER`, `SCHOOL_IDT_SCHOOL`) VALUES (1, 'TEST', 'TEST', 1, 'test', 'test@test.com', '9548168660', 'test2@test.com', 'test.jpg', 1);
 
 COMMIT;
 
