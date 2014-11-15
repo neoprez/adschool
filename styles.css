@@ -127,3 +127,10 @@ h1 {
 	color: #333; 
 	border-radius: 3px;
 }
+.slider {
+	max-width: 85%;
+}
+.slider > img {
+	width: 800px;
+	margin: 0 auto;
+}

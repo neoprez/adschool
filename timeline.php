@@ -24,6 +24,7 @@
 			<h6>Showing most popular events based on user likes</h6>
 		</div>
 		<div class="row content">
+			<!--Event post-->
 			<div class="event-post">
 				<div class="large-12 columns post">
 						<div class="event-image large-2 columns"><img src="images/school-icon.png"/></div>
@@ -37,6 +38,7 @@
 						</div>
 				</div>
 			</div>
+			<!--end event post-->
 		</div>
 	</div>
 <?php include('footer.php'); ?>
