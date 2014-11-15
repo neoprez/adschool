@@ -23,7 +23,7 @@
 ?>
 <div id="general" style="margin: 25px;">
 	<div class="row center">
-		<div class="large-8 columns" style="border-style: solid; border-width: 1px; border-color: #D8D8D8; margin-bottom: 1.25rem; padding: 1.25rem; background: none repeat scroll 0% 0% #F2F2F2; color: #333; border-radius: 3px;">
+		<div class="large-8 columns newpanel">
 			<div id="signup_div">
 				<form id="signup_form" action="timeline.php" method="POST">
 					<!-- <label>First Name</label> -->
