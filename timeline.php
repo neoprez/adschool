@@ -61,20 +61,40 @@
 		</div>
 		<div class="row content">
 			<!--Event post-->
-			<div class="event-post">
-				<div class="large-12 columns post">
-						<div class="event-image large-2 columns"><img src="images/school-icon.png"/></div>
-						<div class="event-info large-8 columns">
-							<h6 class="event-name"><a href="#">Come and see me coding!</a></h6>
-							<p class="event-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse minima dolorum et odit atque modi reiciendis sunt ullam sed consectetur nostrum, perspiciatis, magnam reprehenderit exercitationem beatae voluptas, earum a quod.</p>
+			<?php include('../connect.php');  $events = getEvents(); ?>
+				<?php foreach ($events as $event) {
+					
+					echo '<div class="event-post">
+							<div class="large-12 columns post">
+								<div class="event-image large-2 columns"><img src="'.$event['PIC_EVENT'].'"/></div>
+								<div class="event-info large-8 columns">
+									<h6 class="event-name"><a href="'. $event['LINK_EVENT'] .'">'. $event['NAM_EVENT'] .'</a></h6>
+									<p class="event-excerpt">'.$event['DSC_EVENT'].'</p>
+								</div>
+								<div class="social large-2 columns">
+									<a href=""><img src="images/unlike-heart.jpg" class="icon" onclick="changeLike(this)"/></a>
+									<a href=""><img src="images/share-icon.png" class="icon"/></a>
+								</div>
+							</div>
 						</div>
-						<div class="social large-2 columns">
-							<a href="#"><img src="images/unlike-heart.jpg" class="icon"/></a>
-							<a href="#"><img src="images/share-icon.png" class="icon"/></a>
-						</div>
-				</div>
-			</div>
-			<!--end event post-->
+				<!--end event post-->';
+					
+				} ?>
+				
 		</div>
+		<script>
+			function changeLike(e){
+				var src = $(e).attr('src');
+				switch( src ){
+					case 'images/unlike-heart.jpg':
+						$(e).attr('src', 'images/like-heart.jpg');
+						break;
+					case 'images/like-heart.jpg':
+						$(e).attr('src', 'images/unlike-heart.jpg');
+						break;
+				}
+			}
+		</script>
+
 	</div>
 <?php include('footer.php'); ?>
