@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
 
-	<div class="row center">
+<div class="row center newpanel">
 <h2> Sign Up</h2>
 
 <form>
@@ -10,7 +10,7 @@
     
 <div class="row center">
 <label> 
-    <input class="large-12 columns round" type="text" placeholder="Name" />
+    <input class="large-12 columns round" type="text" placeholder="First Name" />
  </label> 
  </div>
  <br>

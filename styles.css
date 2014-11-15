@@ -97,4 +97,15 @@ h1 {
 .social {
 	padding-top: 3%;
 }
->>>>>>> 59a0d346901a73a69a2513f9fbc936f4eed08e11
+
+/* PAULO TIME LOL */
+.newpanel {
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #D8D8D8;
+	margin-bottom: 1.25rem; 
+	padding: 1.25rem; 
+	background: none repeat scroll 0% 0% #F2F2F2; 
+	color: #333; 
+	border-radius: 3px;
+}
