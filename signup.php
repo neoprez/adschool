@@ -11,7 +11,7 @@
     
 <div class="row center">
 <label> 
-    <input class="large-12 columns round" type="text" placeholder="Name" />
+    <input class="large-12 columns round" type="text" placeholder="First Name" />
  </label> 
  </div>
  <br>
