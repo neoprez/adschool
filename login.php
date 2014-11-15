@@ -1,20 +1,21 @@
-<html>
-	<head>
-		<title>Sign Up</title>
-	</head>
-	<body>
+<?php
+	include ('header.php');
+?>
 		<!--Sign up using FB account-->
 		<div id="facebook_signup">
 			
 		</div>
-		<div id="signup_div">
-			<form id="signup_form" action="signup.php">
-				<label>First Name</label>
-				<input type="text" id="form_firstname" />
+		<div class="row center">
+			<div id="signup_div"`class="row">
+				<form id="signup_form" action="signup.php">
+					<!-- <label>First Name</label> -->
+					<input type="text" id="username" placeholder="Username" />
 
-				<label>Last Name</label>
-				<input type="text" id="form_lastname" />
-			</form>
+					<!-- <label>Last Name</label> -->
+					<input type="password" id="password" placeholder="Password" />
+				</form>
+			</div>
 		</div>
-	</body>
-</html>
+<?php
+	include ('footer.php');
+?>
