@@ -19,7 +19,7 @@
     if ($userName && $userPass )
     {
         // User Entered fields
-        $query = "SELECT name FROM Clients WHERE name = '$userName' AND password = '$userPass'";// AND password = $userPass";
+        $query = "SELECT * FROM USER WHERE EML_USER = '$userName' AND PSW_USER = '$userPass'";// AND password = $userPass";
 
         $result = mysqli_query( $con, $query);
         $row = mysqli_fetch_array($result);
