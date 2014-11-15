@@ -2,7 +2,8 @@
 
 
 <div class="row center newpanel">
-<h2> Sign Up</h2>
+	<div class="large-12 columns ">
+<h2>Sign Up</h2>
 
 <form>
   <div class="row center">
@@ -39,14 +40,14 @@
       
 <div class="row center">       
 <label>
-	<input class="large-12 columns round" type="text" placeholder="Password" />
+	<input class="large-12 columns round" type="password" placeholder="Password" />
 </label>
 </div>
 <br>
       
 <div class="row center">          
 <label>
-    <input class="large-12 columns round" type="text" placeholder="Re-enter Password" />
+    <input class="large-12 columns round" type="password" placeholder="Re-enter Password" />
 </label>
 </div> 
 <br>      
@@ -54,12 +55,16 @@
       
 <div class="row center">  
 <a href="#" class="button [tiny small large] large-12 columns round">Sign Up</a>
+ 
+<p>By signing up, you agree to our <a href="#" class="policy">terms of use</a> 
+and <a href ="#" class= "policy">privacy policy</a></p>
 
 </div>
        		
        		
        
-      
+      				</div>
+      			
     			</div>
  		</div>   		
   </div>

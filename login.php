@@ -1,62 +1,57 @@
 <?php
 	include ('header.php');
-	include_once ('connect.php');
+	include ('connect.php');
 
-	$test = "098f6bcd4621d373cade4e832627b4f6";
+	$row = "";
 
 	$username = isset($_POST['username']) ? $_POST['username'] : '';
-	$password = isset($_POST['password']) ? md5($_POST['password']) : '';
+	$password = isset($_POST['password']) ? ($_POST['password']) : '';
 
-	if( $_SESSION["name"] )
-    {
-        http_redirect('timeline.php');
-    }
+	$_SESSION["name"] = isset($_SESSION["name"]) ? $_SESSION["name"] : '';
 
     $loggedIn = false;
     $userName = $username;
     $userPass = $password;
 
+	if( $_SESSION["name"] )
+    {
+        header('Location: timeline.php');
+    }
+
     if ($userName && $userPass )
     {
         // User Entered fields
-        $query = "SELECT name FROM Clients WHERE name = '$userName' AND password = '$userPass'";// AND password = $userPass";
+        $query = "SELECT * FROM USER WHERE EML_USER = '$userName' AND PSW_USER = '$userPass'";
 
-        $result = mysqli_query( $con, $query);
-        $row = mysqli_fetch_array($result);
+        $result = mysqli_query( $mysqli, $query);
+        $row = mysqli_fetch_row($result);
 
-        if(!$row){
-            echo "<div>";
-            echo "No existing user or wrong password.";
-            echo "</div>";
-        }
-        else
-            $loggedIn = true;
+        var_dump($mysqli);
     }
 
-    if ( !$loggedIn )
-    {
-        echo "
-            <form action='logmein.php' method='post'>
-                Name: <input type='text' name='name' value='$userName'><br>
-                Password: <input type='password' name='pass' value='$userPass'><br>
-                <input type='submit' value='log in'>
-            </form>
-        ";
+    if($row) {
+    	$loggedIn = true;
+	    
+	    if ( $loggedIn )
+	    {
+	        $_SESSION["name"] = $userName;
+	    }
+	    
+        header('Location: timeline.php');
     }
-    else{
-        echo "<div>";
-        echo "You have been logged in as $userName!";
-        echo "</div>";
-        $_SESSION["name"] = $userName;
-    }
+
 
 ?>
 <div id="general" style="margin: 25px;">
 	<div class="row center">
 		<div class="large-8 columns newpanel">
+<?php
+        if(!$row && ($userName && $userPass)) {
+            echo "<a  href='#' class='large-12 columns medium alert button'>Invalid Username or Password.</a>";
+        }
+?>
 			<div id="signup_div">
-				<form id="signup_form" action="timeline.php" method="POST">
-					<!-- <label>First Name</label> -->
+				<form id="signup_form" action="login.php" method="POST">
 					<div class="large-12 columns">
 						<h3>Login</h3>
 					</div>
