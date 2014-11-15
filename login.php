@@ -26,7 +26,7 @@
         $result = mysqli_query( $mysqli, $query);
         $row = mysqli_fetch_row($result);
 
-        var_dump($mysqli);
+        //var_dump($mysqli);
     }
 
     if($row) {
