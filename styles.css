@@ -1,5 +1,6 @@
 @import url('css/foundation.min.css');
 @import url('css/normalize.css');
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
 
 #pageWrapper {
      margin: 0px auto; 
@@ -10,4 +11,15 @@
 .center {
 margin: 0 auto;
 max-width: 70%;
+}
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	
+}
+
+#slogan {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
