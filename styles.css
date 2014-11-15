@@ -20,7 +20,6 @@
 
 .center {
 margin: 0 auto;
-<<<<<<< HEAD
 max-width:70%;
 }
 
@@ -29,7 +28,11 @@ border-radius: 70px;
 }
 
 
+<<<<<<< HEAD
 input[type=text]{
+=======
+textarea {
+>>>>>>> 405c1d9778d4804ed18cb659e880496934090096
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
@@ -49,9 +52,6 @@ input[type=text]:focus{
 
 
 
-}
-=======
-max-width: 70%;
 }
 
 h1 {
@@ -103,7 +103,29 @@ h1 {
 }
 
 .social {
-	padding-top: 3%;
+	padding-top: 5%;
+}
+
+.event-post {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.post {
+	padding-top: 10px;
+	border: 1px solid #a9a5a5;
+	border-radius: 20px;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+
+.content {
+	background-color: #E7E7E7;
+}
+
+.event-image > img {
+	padding-top: 16px;
 }
 
 /* PAULO TIME LOL */
@@ -116,8 +138,4 @@ h1 {
 	background: none repeat scroll 0% 0% #F2F2F2; 
 	color: #333; 
 	border-radius: 3px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> c5f5b3898b8ac938f77605371ebb840680a4026a
