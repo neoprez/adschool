@@ -12,7 +12,6 @@
 
 .center {
 margin: 0 auto;
-<<<<<<< HEAD
 max-width:70%;
 }
 
@@ -41,9 +40,6 @@ input[type=text]:focus, textarea:focus {
 
 
 
-}
-=======
-max-width: 70%;
 }
 
 h1 {
@@ -95,7 +91,6 @@ h1 {
 }
 
 .social {
-<<<<<<< HEAD
 	padding-top: 5%;
 }
 
@@ -120,9 +115,6 @@ h1 {
 .event-image > img {
 	padding-top: 16px;
 }
-=======
-	padding-top: 3%;
-}
 
 /* PAULO TIME LOL */
 .newpanel {
@@ -134,9 +126,4 @@ h1 {
 	background: none repeat scroll 0% 0% #F2F2F2; 
 	color: #333; 
 	border-radius: 3px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> c5f5b3898b8ac938f77605371ebb840680a4026a
->>>>>>> d7b40d82a403cfc9fd4413166e624c7d27d954b0
