@@ -1,4 +1,40 @@
-<?php include('header.php'); ?>
+<?php 
+	include('header.php'); 
+	include('connect.php');
+
+	$row = "";
+
+	$tags = isset($tags) ? $tags : '';
+
+	$_SESSION["name"] = isset($_SESSION["name"]) ? $_SESSION["name"] : '';
+
+	if( $_SESSION["name"] )
+    {
+        echo "clap your hands";
+    }
+
+    // if ($userName && $userPass )
+    // {
+    //     // User Entered fields
+    //     $query = "SELECT * FROM USER WHERE EML_USER = '$userName' AND PSW_USER = '$userPass'";
+
+    //     $result = mysqli_query( $mysqli, $query);
+    //     $row = mysqli_fetch_row($result);
+
+    //     var_dump($mysqli);
+    // }
+
+    // if($row) {
+    // 	$loggedIn = true;
+	    
+	   //  if ( $loggedIn )
+	   //  {
+	   //      $_SESSION["name"] = $userName;
+	   //  }
+	    
+    //     header('Location: timeline.php');
+    // }
+?>
 	<div class="row">
 		<div class="large-12 columns" id="filter">
 			<dl class="sub-nav">
