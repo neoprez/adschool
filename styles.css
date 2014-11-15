@@ -1,0 +1,8 @@
+@import url('css/foundation.min.css');
+@import url('css/normalize.css');
+
+#pageWrapper {
+     margin: 0px auto; 
+     max-width: 62.5em; 
+     width: 100%; 
+}
