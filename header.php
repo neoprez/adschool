@@ -6,8 +6,13 @@
 	<body>
 		<div id="pageWrapper">
 			<header class="row">
-				<a class="large-4 logo columns">College Konnect</a>
-				<input type="text" name="search" placeholder="Search" class="large-3 columns" />
-				<a class="large-2 columns" name="login" href="login.php">Log in</a>
-				<a class="large-2 columns" name="signup" href="signup.php">Sign Up</a>
+				<div class="row">
+					<input type="text" name="search" placeholder="Search" class="large-3 columns" />
+					<div class="large-5 columns"><h1></h1></div>
+					<a class="large-2 columns" name="login" href="login.php">Log in</a>
+					<a class="large-2 columns" name="signup" href="signup.php">Sign Up</a>
+				</div>
+				<div class="row">
+					<a class="large-12 logo columns"><img src="images/logo.png" /></a>
+				</div>
 			</header>
