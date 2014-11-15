@@ -2,7 +2,8 @@
 
 
 <div class="row center newpanel">
-<h2> Sign Up</h2>
+	<div class="large-12 columns ">
+<h2>Sign Up</h2>
 
 <form>
   <div class="row center">
@@ -10,7 +11,7 @@
     
 <div class="row center">
 <label> 
-    <input class="large-12 columns round" type="text" placeholder="First Name" />
+    <input class="large-12 columns round" type="text" placeholder="Name" />
  </label> 
  </div>
  <br>
@@ -39,14 +40,14 @@
       
 <div class="row center">       
 <label>
-	<input class="large-12 columns round" type="text" placeholder="Password" />
+	<input class="large-12 columns round" type="password" placeholder="Password" />
 </label>
 </div>
 <br>
       
 <div class="row center">          
 <label>
-    <input class="large-12 columns round" type="text" placeholder="Re-enter Password" />
+    <input class="large-12 columns round" type="password" placeholder="Re-enter Password" />
 </label>
 </div> 
 <br>      
@@ -59,7 +60,8 @@
        		
        		
        
-      
+      				</div>
+      			
     			</div>
  		</div>   		
   </div>
