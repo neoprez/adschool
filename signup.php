@@ -1,11 +1,10 @@
 <?php include('header.php'); ?>
 
-<div class="row center">
+
 	<div class="row center">
 <h2> Sign Up</h2>
 
-<div id="border">
-<form class = "border">
+<form>
   <div class="row center">
     <div class="large-12 columns ">
     
