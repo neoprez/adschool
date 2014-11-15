@@ -57,15 +57,15 @@
 				<?php foreach ($events as $event) {
 					
 					echo '<div class="event-post">
-							<div class="large-12 columns post">
-								<div class="event-image large-2 columns"><img src="'.$event['PIC_EVENT'].'"/></div>
-								<div class="event-info large-8 columns">
+							<div class="large-12 medium-12 small-12 columns post">
+								<div class="event-image large-2 medium-2 small-12 columns"><img src="'.$event['PIC_EVENT'].'"/></div>
+								<div class="event-info large-8 medium-8  small-12 columns">
 									<h6 class="event-name"><a href="'. $event['LINK_EVENT'] .'">'. $event['NAM_EVENT'] .'</a></h6>
 									<p class="event-excerpt">'.$event['DSC_EVENT'].'</p>
 								</div>
-								<div class="social large-2 columns">
-									<a href=""><img src="images/unlike-heart.jpg" class="icon" onclick="changeLike(this)"/></a>
-									<a href=""><img src="images/share-icon.png" class="icon"/></a>
+								<div class="social large-2 medium-2 small-12 columns">
+									<a ><img src="images/unlike-heart.jpg" class="icon" onclick="changeLike(this)"/></a>
+									<a ><img src="images/share-icon.png" class="icon"/></a>
 								</div>
 							</div>
 						</div>
