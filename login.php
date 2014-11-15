@@ -1,22 +1,22 @@
 <?php
 	include ('header.php');
-	include_once ('connect.php');
+	include ('connect.php');
 
-	$test = "098f6bcd4621d373cade4e832627b4f6";
+	$row = "";
 
 	$username = isset($_POST['username']) ? $_POST['username'] : '';
-	$password = isset($_POST['password']) ? md5($_POST['password']) : '';
+	$password = isset($_POST['password']) ? ($_POST['password']) : '';
 
 	$_SESSION["name"] = isset($_SESSION["name"]) ? $_SESSION["name"] : '';
-
-	if( $_SESSION["name"] )
-    {
-        http_redirect('timeline.php');
-    }
 
     $loggedIn = false;
     $userName = $username;
     $userPass = $password;
+
+	if( $_SESSION["name"] )
+    {
+        header('Location: timeline.php');
+    }
 
     if ($userName && $userPass )
     {
@@ -24,29 +24,34 @@
         $query = "SELECT * FROM USER WHERE EML_USER = '$userName' AND PSW_USER = '$userPass'";
 
         $result = mysqli_query( $mysqli, $query);
-        $row = mysqli_fetch_array($result);
+        $row = mysqli_fetch_row($result);
+
+        var_dump($mysqli);
     }
 
-    if ( $loggedIn )
-    {
-        $_SESSION["name"] = $userName;
+    if($row) {
+    	$loggedIn = true;
+	    
+	    if ( $loggedIn )
+	    {
+	        $_SESSION["name"] = $userName;
+	    }
+	    
+        header('Location: timeline.php');
     }
+
 
 ?>
 <div id="general" style="margin: 25px;">
 	<div class="row center">
 		<div class="large-8 columns newpanel">
 <?php
-        if(!$row) {
-            echo "<a href='#' class='medium alert button'>No existing Username or Password.</a>";
-        }
-        else {
-            $loggedIn = true;
+        if(!$row && ($userName && $userPass)) {
+            echo "<a  href='#' class='large-12 columns medium alert button'>Invalid Username or Password.</a>";
         }
 ?>
 			<div id="signup_div">
 				<form id="signup_form" action="login.php" method="POST">
-					<!-- <label>First Name</label> -->
 					<div class="large-12 columns">
 						<h3>Login</h3>
 					</div>
