@@ -55,6 +55,9 @@
       
 <div class="row center">  
 <a href="#" class="button [tiny small large] large-12 columns round">Sign Up</a>
+ 
+<p>By signing up, you agree to our <a href="#" class="policy">terms of use</a> 
+and <a href ="#" class= "policy">privacy policy</a></p>
 
 </div>
        		
