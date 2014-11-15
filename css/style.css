@@ -1,0 +1,85 @@
+body
+{
+	font-family:arial;
+	font-size:20px;
+	text-align:center;
+}
+
+table, th, tr 
+{
+	/*border:solid 5px black;*/
+	border-radius:5px;
+	padding:5px;
+}
+td
+{
+	width:49%;
+}
+
+table
+{
+	width:100%;
+	padding:20px;
+	border-radius:5px;
+}
+fieldset
+{
+	border-radius:10px;
+	padding:15px;
+	color:#B8B8B8;
+	background-color:#F0F0F0;
+	width:97%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#picture
+{
+	width:100%;
+	height:100%;
+	padding:0px;
+	font-family:arial;
+	border-radius:5px;
+	background-color:white;
+	border:solid 1px #A9A9A9;
+	background-size: contain;
+}
+input, textarea, button
+{
+	width:100%;
+	border-radius:5px;
+	padding:15px;
+	font-size:20px;
+	font-family:arial;
+}
+#createEvent
+{
+	color:white;
+	background-color:green;
+}
+#startDate, #endDate
+{
+	width:49.5%;
+}
+textarea
+{
+	height:100px;
+}
+#uploadPicture
+{
+	position:relative;
+	top:50%;
+	height:100%;
+	width:100%;
+	left:0%;
+	text-decoration:underline;
+	font-size:46px;
+}
+#uploadFile
+{
+	visibility:hidden;
+}
+#dialog
+{
+	font-size:36px;
+}

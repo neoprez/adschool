@@ -1,13 +1,20 @@
-<?php include('header.php'); 
-			echo "<div class='row'>";
-				echo "<div class='large-12 slider columns'>";
+<?php
+	include('header.php'); 
+			echo "<div class='row'>
+				<div class='large-12 columns'>
+					<h1 id='slogan'>Share your events with the NYC college community! </h1>
+				</div>
+				<div class='large-12 slider columns'>
+					<img src='images/banner.png'/>
+				</div>
+			</div>";
+	include('footer.php');
 	echo "<head>";
 	echo "<title>Create Event</title>";
-	echo "<link rel='stylesheet' type='text/css' href='./css/style.css'>";
-	echo "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>";
-	echo "<script src='./dbscript/script.js'></script>";
+	echo "<link rel='stylesheet' type='text/css' href='style.css'>";
+	//echo "<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>";
+	echo "<script src='script.js'></script>";
 	echo "</head>";
-	createEvent();
 	echo "<form id='formEvent' name='formEvent' method='post'>";
 	echo "<fieldset>";
 	echo "<h1>Add Event</h1>";
@@ -33,10 +40,9 @@
 	echo "</tr>";
 	echo "</table>";
 	echo "</fieldset>";
-	echo "</form><br>";
-				echo "</div>";
-			echo "</div>";
-	include('footer.php'); 
+	echo "</form>";
+	
+	createEvent();
 	
 	function createEvent()
 	{
@@ -51,20 +57,16 @@
 					$database="college_konnect";
 					mysql_connect('localhost',$username,$password);
 					@mysql_select_db($database) or die( "Unable to select database");
-					if(!(isset($_POST['uploadFile'])))
-					{
-						$_POST['uploadFile']=null;
-					}
 					$query = "INSERT INTO event VALUES ('','$_POST[name]','$_POST[startDate]','$_POST[endDate]','$_POST[price]','$_POST[location]','$_POST[link]','$_POST[description]','$_POST[tags]','$_POST[uploadFile]')";
+					mysql_query($query);
 					$result=mysql_query($query);
 					if($result==false or $result<=0)
 					{
-						echo "<br><p id='dialog'>An error has occurred.  Event not created.</p>";
-						//.mysql_error();
+						echo "An error has occurred.  Event not created.".mysql_error();
 					}
 					else if($result>0)
 					{
-						echo "<br><p id='dialog'>Event created</p>";
+						echo "Event created";
 					}
 					mysql_close();
 					/*$message="";
@@ -76,17 +78,13 @@
 				}
 				else
 				{
-					echo "<br><p id='dialog'><b>Information is not all filled out:</b><br>".whatsMissing()."</p>";
+					echo "<b>Information is not all filled out:</b><br>".whatsMissing()."<br>";
 				}
 			}
 			else
 			{
-				echo "<br><p id='dialog'><b>Information is not all filled out:</b><br>".whatsMissing()."</p>";
+				echo "<b>Information is not all filled out:</b><br>".whatsMissing()."<br>";
 			}
-		}
-		else
-		{
-			echo "<br><p id='dialog'>Please Create an Event</p>";
 		}
 	}
 		
@@ -150,5 +148,4 @@
 		}
 		return $message;
 	}
-
 ?>
