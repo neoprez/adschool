@@ -4,36 +4,28 @@
 
 	$row = "";
 
-	$tags = isset($tags) ? $tags : '';
+	$tag = isset($tag) ? $tag : '';
 
 	$_SESSION["name"] = isset($_SESSION["name"]) ? $_SESSION["name"] : '';
 
-	if( $_SESSION["name"] )
-    {
-        echo "clap your hands";
+	// if(! $_SESSION["name"] )
+ //    {
+ //        header('Location: login.php');
+ //    }
+
+    
+    if($tag) {
+    	$query = "SELECT * FROM EVENT WHERE TAG_EVENT='$tag'";
+    } else {
+    	$query = "SELECT * FROM EVENT";
     }
 
-    // if ($userName && $userPass )
-    // {
-    //     // User Entered fields
-    //     $query = "SELECT * FROM USER WHERE EML_USER = '$userName' AND PSW_USER = '$userPass'";
+    $result = mysqli_query( $mysqli, $query);
+    $array = mysqli_fetch_array($result);
 
-    //     $result = mysqli_query( $mysqli, $query);
-    //     $row = mysqli_fetch_row($result);
-
-    //     var_dump($mysqli);
-    // }
-
-    // if($row) {
-    // 	$loggedIn = true;
-	    
-	   //  if ( $loggedIn )
-	   //  {
-	   //      $_SESSION["name"] = $userName;
-	   //  }
-	    
-    //     header('Location: timeline.php');
-    // }
+    if($array) {
+    	echo "";
+    }
 ?>
 	<div class="row">
 		<div class="large-12 columns" id="filter">

@@ -26,7 +26,11 @@
         $result = mysqli_query( $mysqli, $query);
         $row = mysqli_fetch_row($result);
 
+<<<<<<< HEAD
         //var_dump($mysqli);
+=======
+        // var_dump($mysqli);
+>>>>>>> 126cc42c29e7c76605fee337bc2597c026240005
     }
 
     if($row) {
