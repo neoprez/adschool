@@ -25,13 +25,6 @@
 
         $result = mysqli_query( $mysqli, $query);
         $row = mysqli_fetch_array($result);
-
-        if(!$row) {
-            echo "<a href='#' class='medium alert button'>No existing Username or Password.</a>";
-        }
-        else {
-            $loggedIn = true;
-        }
     }
 
     if ( $loggedIn )
@@ -43,8 +36,16 @@
 <div id="general" style="margin: 25px;">
 	<div class="row center">
 		<div class="large-8 columns newpanel">
+<?php
+        if(!$row) {
+            echo "<a href='#' class='medium alert button'>No existing Username or Password.</a>";
+        }
+        else {
+            $loggedIn = true;
+        }
+?>
 			<div id="signup_div">
-				<form id="signup_form" action="timeline.php" method="POST">
+				<form id="signup_form" action="login.php" method="POST">
 					<!-- <label>First Name</label> -->
 					<div class="large-12 columns">
 						<h3>Login</h3>
