@@ -48,7 +48,7 @@ if(isset($_POST['signup']))
 		}
 		else
 		{
-				echo "<p>Some information is missing, you are not signed up</p>";	
+			echo "<p>Some information is missing, you are not signed up</p>";	
 		}
 	}
 	else
