@@ -7,6 +7,8 @@
 	$username = isset($_POST['username']) ? $_POST['username'] : '';
 	$password = isset($_POST['password']) ? md5($_POST['password']) : '';
 
+	$_SESSION["name"] = isset($_SESSION["name"]) ? $_SESSION["name"] : '';
+
 	if( $_SESSION["name"] )
     {
         http_redirect('timeline.php');
@@ -19,34 +21,21 @@
     if ($userName && $userPass )
     {
         // User Entered fields
-        $query = "SELECT name FROM Clients WHERE name = '$userName' AND password = '$userPass'";// AND password = $userPass";
+        $query = "SELECT * FROM USER WHERE EML_USER = '$userName' AND PSW_USER = '$userPass'";
 
-        $result = mysqli_query( $con, $query);
+        $result = mysqli_query( $mysqli, $query);
         $row = mysqli_fetch_array($result);
 
-        if(!$row){
-            echo "<div>";
-            echo "No existing user or wrong password.";
-            echo "</div>";
+        if(!$row) {
+            echo "<a href='#' class='medium alert button'>No existing Username or Password.</a>";
         }
-        else
+        else {
             $loggedIn = true;
+        }
     }
 
-    if ( !$loggedIn )
+    if ( $loggedIn )
     {
-        echo "
-            <form action='logmein.php' method='post'>
-                Name: <input type='text' name='name' value='$userName'><br>
-                Password: <input type='password' name='pass' value='$userPass'><br>
-                <input type='submit' value='log in'>
-            </form>
-        ";
-    }
-    else{
-        echo "<div>";
-        echo "You have been logged in as $userName!";
-        echo "</div>";
         $_SESSION["name"] = $userName;
     }
 
