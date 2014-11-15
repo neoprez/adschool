@@ -11,7 +11,7 @@
     
 <div class="row center">
 <label> 
-    <input class="large-12 columns round" type="text" placeholder="Name" />
+    <input class="large-12 columns round" type="text" placeholder="First Name" />
  </label> 
  </div>
  <br>
@@ -55,6 +55,9 @@
       
 <div class="row center">  
 <a href="#" class="button [tiny small large] large-12 columns round">Sign Up</a>
+ 
+<p>By signing up, you agree to our <a href="#" class="policy">terms of use</a> 
+and <a href ="#" class= "policy">privacy policy</a></p>
 
 </div>
        		
