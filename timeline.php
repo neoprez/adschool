@@ -24,15 +24,17 @@
 			<h6>Showing most popular events based on user likes</h6>
 		</div>
 		<div class="row content">
-			<div class="large-12 columns post-event">
-				<div class="event-image large-2 columns"><img src="images/school-icon.png"/></div>
-				<div class="event-info large-8 columns">
-					<h6 class="event-name"><a href="#">Come and see me coding!</a></h6>
-					<p class="event-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse minima dolorum et odit atque modi reiciendis sunt ullam sed consectetur nostrum, perspiciatis, magnam reprehenderit exercitationem beatae voluptas, earum a quod.</p>
-				</div>
-				<div class="social large-2 columns">
-					<a href="#"><img src="images/unlike-heart.jpg" class="icon"/></a>
-					<a href="#"><img src="images/share-icon.png" class="icon"/></a>
+			<div class="event-post">
+				<div class="large-12 columns post">
+						<div class="event-image large-2 columns"><img src="images/school-icon.png"/></div>
+						<div class="event-info large-8 columns">
+							<h6 class="event-name"><a href="#">Come and see me coding!</a></h6>
+							<p class="event-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse minima dolorum et odit atque modi reiciendis sunt ullam sed consectetur nostrum, perspiciatis, magnam reprehenderit exercitationem beatae voluptas, earum a quod.</p>
+						</div>
+						<div class="social large-2 columns">
+							<a href="#"><img src="images/unlike-heart.jpg" class="icon"/></a>
+							<a href="#"><img src="images/share-icon.png" class="icon"/></a>
+						</div>
 				</div>
 			</div>
 		</div>

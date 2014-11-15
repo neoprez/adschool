@@ -13,6 +13,6 @@
 					<a class="large-2 columns" name="signup" href="signup.php">Sign Up</a>
 				</div>
 				<div class="row">
-					<a class="large-12 logo columns"><img src="images/logo.png" /></a>
+					<a class="large-12 logo columns" href="index.php"><img src="images/logo.png" /></a>
 				</div>
 			</header>

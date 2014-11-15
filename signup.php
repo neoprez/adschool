@@ -1,54 +1,68 @@
 <?php include('header.php'); ?>
-			<h2> Sign Up</h2>
+
+
+<div class="row center newpanel">
+<h2> Sign Up</h2>
+
 <form>
   <div class="row center">
-    <div class="large-12 columns">
-      <label>
-        <input type="text" placeholder="Name" />
-      </label>
-      
-   
-      
-      <label>
-        <input type="text" placeholder="Last Name" />
-      </label>
+    <div class="large-12 columns ">
+    
+<div class="row center">
+<label> 
+    <input class="large-12 columns round" type="text" placeholder="First Name" />
+ </label> 
+ </div>
+ <br>
+    
+<div class="row center">   
+<label>
+	<input class="large-12 columns round" type="text" placeholder="Last Name" />
+</label>
+</div>
+<br>
       
         
-         
-      <label>
-        <input type="text" placeholder="School Email" />
-      </label>
+<div class="row center">       
+<label>
+	<input class="large-12 columns round" type="text" placeholder="School Email" />
+</label>
+</div>
+<br>
       
-        
+ <div class="row center">        
+<label>
+	<input class="large-12 columns round" type="text" placeholder="Confirm School email" />
+</label>
+</div>
+<br>
       
-      <label>
-        <input type="text" placeholder="Confirm School email" />
-      </label>
+<div class="row center">       
+<label>
+	<input class="large-12 columns round" type="text" placeholder="Password" />
+</label>
+</div>
+<br>
       
+<div class="row center">          
+<label>
+    <input class="large-12 columns round" type="text" placeholder="Re-enter Password" />
+</label>
+</div> 
+<br>      
+
+      
+<div class="row center">  
+<a href="#" class="button [tiny small large] large-12 columns round">Sign Up</a>
+
+</div>
+       		
+       		
        
-         
-      <label>
-        <input type="text" placeholder="Password" />
-      </label>
       
-         
-         
-         <label>
-        <input type="text" placeholder="Re-enter Password" />
-      </label>
-      
-     <p></p>
-      <div class="large-4 medium-4 columns">
-       <a href="#" class="button [tiny small large]">Sign Up</a>
-       </div>
-      </div>
-    
-    
+    			</div>
+ 		</div>   		
   </div>
 				
 <?php include('footer.php'); ?>
 
-
-  
-  
-  
